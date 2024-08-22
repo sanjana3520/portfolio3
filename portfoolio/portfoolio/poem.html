@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            padding: 20px;
+            max-width: 90vw; /* Limits the width of the container */
+        }
+
+        .image-container img {
+            height: 500px;
+            width: 700px;
+            object-fit: cover; /* Ensures the image covers the entire area without distorting */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Optional: Hide scrollbar for a cleaner look */
+        .image-container::-webkit-scrollbar {
+            display: none;
+        }
+
+        .image-container {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/Poem1.jpg" class="one">
+        <img src="/poem2.jpg" class="two">
+        <img src="/poem3.jpg" class="three">
+        <img src="/poem4.jpg" class="four">
+    </div>
+</body>
+</html>
+
+
+
+

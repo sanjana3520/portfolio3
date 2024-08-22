@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .contact-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-left-title h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .contact-left-title hr {
+            width: 50px;
+            border: 2px solid #333;
+            margin-bottom: 20px;
+        }
+
+        .contact-me {
+            width: 450px;
+            height: 55px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            padding-left: 20px;
+            font-size: 16px;
+            color: #666;
+            outline: none;
+        }
+
+        textarea.contact-me {
+            height: 150px;
+            resize: none;
+            padding-top: 15px;
+
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            background: linear-gradient(#ff994f,#fa6d86);
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button img {
+            margin-left: 10px;
+            width: 20px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+        
+            
+        
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="de64e660-ca25-4cf2-841b-c7353063e0d2">
+
+            <input type="text" name="name" placeholder="Enter your name" class="contact-me" required>
+            <br>
+            <input type="email" name="email" placeholder="Enter your email" class="contact-me" required>
+            <br>
+            <textarea name="message" placeholder="Your Message" class="contact-me"></textarea>
+            <button type="submit">Submit  </button>
+        </form>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+    /* background-image: url(background.jpg); */
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 12%;
+    background:rgba(0, 0, 0, 0.8);
+    backdrop-filter:blur(10px);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+    transition: 0.3s ease;
+}
+.logo{
+    font-size: 35px;
+    color:white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 0;
+
+}
+.logo:hover{
+    color:orangered;
+    text-shadow:0 0 25px orangered,
+                0 0 50px orangered;
+    transform: scale(1.1);               
+}
+span{
+    color: orangered;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+} 
+.navbar a:hover,
+.navbar a.active{
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color: orangered;
+    /* box-shadow: 0 0 25px orangered; */
+    color: white;     
+}
+.home{
+    /* width: 100%;
+    min-height: 50vh; */
+    background:rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* gap: 7em; */
+    padding: 50px;
+}
+.home-content{
+    font-size: 42px;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+.home-content2{
+    font-size: 35px;
+}
+.home-content p{
+    width: 300px;
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.btn-1:hover{
+        background-color: orangered;
+        /* box-shadow: 0 0 25px orangered; */
+        color: white;     
+}
+.btn-1{
+    padding: 5px 15px;
+    border-radius: 3px;
+    /* border: none; */
+}
+.about-content p{
+    color: white;
+    font-size: 20px;
+    margin: 2em 0 3em;
+}
+.links{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.links:hover{
+    text-decoration: underline;
+    color: orangered;
+}
+.portfolio{
+    color: orangered;
+    text-decoration: underline;
+}
+.profile-image{
+    margin-left: 300px;
+    /* background: center; */
+    margin-top: 90px;
+
+}
+/* .home-content{
+    margin-top: 50px;
+} */
